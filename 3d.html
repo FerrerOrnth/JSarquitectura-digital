@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <link rel="shortcut icon" href="Imgs/LOGO/JS2.png" type="image/x-icon">
+        <link rel="stylesheet" href="CSS/estilito.css">
+        <script src="https://kit.fontawesome.com/fe3f6d7c1b.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <title>JS Arquitectura</title>
+    </head>
+    <body>
+        <header id="headermio">         
+        </header>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById("op1").style.background="#ed9623";
+                document.getElementById("op1").style.color="black";
+                document.getElementById("op1").style.fontWeight = "900";
+            }
+        </script>
+        <main>
+          <section class="animada">
+                <div class="titulosanimados" id="imagenes3d">
+                    <div class="texto-arriba">
+                    <div>
+                        <span class="titulosbanner">Imágenes 3D</span>
+                    </div>
+                    </div>
+                    <div class="texto-abajo">
+                        <div id="parrafobanner">Las imágenes 3D te muestran con gran realismo espacios que aún no existen o no han sido renovados. Son una herramienta útil a la hora de tomar decisiones de diseño y te permiten visualizar cómo será el espacio terminado.</div>
+                    </div>
+                </div>
+            </section>
+            <!-- <section class="bannergaleria" id="noanimado">
+                <p class="bannergaleriatitulo">Imágenes 3D</p>
+                <p class="bannergaleriatexto">Las imágenes 3D te muestran con realismo espacios que aún no existen o no han sido renovados. Son una herramienta útil para tomar decisiones de diseño y te permiten visualizar con detalle cómo será el espacio terminado.</p>
+            </section> -->
+            <div class="contenedor-galeria" id="contenedor-galeria">
+              <div class="galeria-hijo">
+                <a href="#3d1">
+                  <img src="Imgs/3D INTERIORISMO/1a.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d2">
+                  <img src="Imgs/3D INTERIORISMO/1b.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d3">
+                  <img src="Imgs/3D INTERIORISMO/1c.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d4">
+                  <img src="Imgs/3D INTERIORISMO/1d.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d5">
+                  <img src="Imgs/3D INTERIORISMO/1e.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d6">
+                  <img src="Imgs/3D INTERIORISMO/2a.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d7">
+                  <img src="Imgs/3D INTERIORISMO/2b.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d8">
+                  <img src="Imgs/3D INTERIORISMO/2c.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d9">
+                  <img src="Imgs/3D INTERIORISMO/2d.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d10">
+                  <img src="Imgs/3D INTERIORISMO/2e.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d11">
+                  <img src="Imgs/3D INTERIORISMO/6a.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d12">
+                  <img src="Imgs/3D INTERIORISMO/6b.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d13">
+                  <img src="Imgs/3D INTERIORISMO/6c.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d14">
+                  <img src="Imgs/3D INTERIORISMO/6d.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d15">
+                  <img src="Imgs/3D INTERIORISMO/6e.jpg" alt="">
+                </a>
+                </div>
+              <div class="galeria-hijo">
+                <a href="#3d16">
+                  <img src="Imgs/3D INTERIORISMO/6f.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d17">
+                  <img src="Imgs/3D INTERIORISMO/6g.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d18">
+                  <img src="Imgs/3D INTERIORISMO/6h.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d19">
+                  <img src="Imgs/3D INTERIORISMO/7a.png" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d20">
+                  <img src="Imgs/3D INTERIORISMO/7b.png" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d21">
+                  <img src="Imgs/3D INTERIORISMO/7c.png" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d22">
+                  <img src="Imgs/3D INTERIORISMO/8a.png" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d23">
+                  <img src="Imgs/3D INTERIORISMO/8abis.png" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d24">
+                  <img src="Imgs/3D INTERIORISMO/8b.png" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d25">
+                  <img src="Imgs/3D INTERIORISMO/8c.png" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d26">
+                  <img src="Imgs/3D INTERIORISMO/8d.png" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d27">
+                  <img src="Imgs/3D INTERIORISMO/9e.png" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d28">
+                  <img src="Imgs/3D INTERIORISMO/9f.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d29">
+                  <img src="Imgs/3D INTERIORISMO/9a.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d30">
+                  <img src="Imgs/3D INTERIORISMO/9b.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d31">
+                  <img src="Imgs/3D INTERIORISMO/9c.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d32">
+                  <img src="Imgs/3D INTERIORISMO/9d.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d33">
+                  <img src="Imgs/3D INTERIORISMO/3a.png" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d34">
+                  <img src="Imgs/3D INTERIORISMO/3b.png" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d35">
+                  <img src="Imgs/3D INTERIORISMO/3c.png" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d36">
+                  <img src="Imgs/3D INTERIORISMO/4a.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d37">
+                  <img src="Imgs/3D INTERIORISMO/4b.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d38">
+                  <img src="Imgs/3D INTERIORISMO/5a.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d39">
+                  <img src="Imgs/3D INTERIORISMO/5b.jpg" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d40">
+                  <img src="Imgs/3D INTERIORISMO/5d.jpg" alt="">
+                </a>
+              </div>
+              <!-- <div class="galeria-hijo">
+                <a href="#3d41">
+                  <img src="Imgs/3D INTERIORISMO/Axo.png" alt="">
+                </a>
+              </div>
+              <div class="galeria-hijo">
+                <a href="#3d42">
+                  <img src="Imgs/3D INTERIORISMO/Axo2.png" alt="">
+                </a>
+              </div> -->
+            </div>    
+        </main>
+        <article class="lightbox" id="3d1">
+            <a href="#3d40" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/1a.jpg" alt="">
+            <a href="#3d2" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d2">
+            <a href="#3d1" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/1b.jpg" alt="">
+            <a href="#3d3" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d3">
+            <a href="#3d2" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/1c.jpg" alt="">
+            <a href="#3d4" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d4">
+            <a href="#3d3" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/1d.jpg" alt="">
+            <a href="#3d5" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d5">
+            <a href="#3d4" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/1e.jpg" alt="">
+            <a href="#3d6" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d6">
+            <a href="#3d5" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/2a.jpg" alt="">
+            <a href="#3d7" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d7">
+            <a href="#3d6" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/2b.jpg" alt="">
+            <a href="#3d8" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d8">
+            <a href="#3d7" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/2c.jpg" alt="">
+            <a href="#3d9" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d9">
+            <a href="#3d8" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/2d.jpg" alt="">
+            <a href="#3d10" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d10">
+            <a href="#3d9" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/2e.jpg" alt="">
+            <a href="#3d11" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d11">
+            <a href="#3d10" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/6a.jpg" alt="">
+            <a href="#3d12" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d12">
+            <a href="#3d11" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/6b.jpg" alt="">
+            <a href="#3d13" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d13">
+          <a href="#3d12" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+          <img src="Imgs/3D INTERIORISMO/6c.jpg" alt="">
+          <a href="#3d14" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d14">
+            <a href="#3d13" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/6d.jpg" alt="">
+            <a href="#3d15" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d15">
+            <a href="#3d14" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/6e.jpg" alt="">
+            <a href="#3d16" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d16">
+            <a href="#3d15" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/6f.jpg" alt="">
+            <a href="#3d17" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d17">
+            <a href="#3d16" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/6g.jpg" alt="">
+            <a href="#3d18" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d18">
+            <a href="#3d17" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/6h.jpg" alt="">
+            <a href="#3d19" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d19">
+            <a href="#3d18" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/7a.png" alt="">
+            <a href="#3d20" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d20">
+            <a href="#3d19" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/7b.png" alt="">
+            <a href="#3d21" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d21">
+            <a href="#3d20" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/7c.png" alt="">
+            <a href="#3d22" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d22">
+            <a href="#3d21" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/8a.png" alt="">
+            <a href="#3d23" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d23">
+            <a href="#3d22" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/8abis.png" alt="">
+            <a href="#3d24" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d24">
+            <a href="#3d23" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/8b.png" alt="">
+            <a href="#3d25" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d25">
+          <a href="#3d24" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+          <img src="Imgs/3D INTERIORISMO/8c.png" alt="">
+          <a href="#3d26" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d26">
+            <a href="#3d25" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/8d.png" alt="">
+            <a href="#3d27" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d27">
+            <a href="#3d26" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/9e.png" alt="">
+            <a href="#3d28" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d28">
+            <a href="#3d27" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/9f.jpg" alt="">
+            <a href="#3d29" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d29">
+            <a href="#3d28" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/9a.jpg" alt="">
+            <a href="#3d30" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d30">
+            <a href="#3d29" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/9b.jpg" alt="">
+            <a href="#3d31" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d31">
+            <a href="#3d30" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/9c.jpg" alt="">
+            <a href="#3d32" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d32">
+            <a href="#3d31" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/9d.jpg" alt="">
+            <a href="#3d33" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d33">
+            <a href="#3d32" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/3a.png" alt="">
+            <a href="#3d34" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d34">
+            <a href="#3d33" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/3b.png" alt="">
+            <a href="#3d35" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d35">
+            <a href="#3d34" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/3c.png" alt="">
+            <a href="#3d36" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d36">
+            <a href="#3d35" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="Imgs/3D INTERIORISMO/4a.jpg" alt="">
+            <a href="#3d37" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d37">
+          <a href="#3d36" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+          <img src="Imgs/3D INTERIORISMO/4b.jpg" alt="">
+          <a href="#3d38" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d38">
+          <a href="#3d37" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+          <img src="Imgs/3D INTERIORISMO/5a.jpg" alt="">
+          <a href="#3d39" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d39">
+          <a href="#3d38" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+          <img src="Imgs/3D INTERIORISMO/5b.jpg" alt="">
+          <a href="#3d40" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="3d40">
+          <a href="#3d39" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+          <img src="Imgs/3D INTERIORISMO/5c.jpg" alt="">
+          <a href="#3d1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="close">X</a>
+        </article>
+        <section>
+          <p class="titulolinks">Visitá también nuestras otras secciones:</p>
+          <div class="separador"></div>
+          <div class="linksgalerias">
+              <div class="links">
+                  <a href="comparativa.html" src="foto">
+                      <img src="Imgs/Comparativas.jpg" alt=""></a>
+                  <tag>Comparativas</tag>
+                  <!-- <div class="separador2"></div> -->
+              </div>
+              <div class="links">
+                  <a href="antes y despues.html" src="foto">
+                      <img src="Imgs/AyD.JPG" alt=""></a>
+                  <tag>Antes y después</tag>
+                  <!-- <div class="separador2"></div> -->
+              </div>
+              <div class="links">
+                  <a href="fotomontajes.html" src="foto">
+                      <img src="Imgs/Fotomontaje.jpg" alt=""></a>
+                  <tag>Fotomontajes</tag>
+                  <!-- <div class="separador2"></div> -->
+              </div>
+          </div>
+        </section>
+        </div>   
+        <footer id="footermio"></footer>
+        <script src="JavaScript/script.js"></script>
+    </body>
+</html>

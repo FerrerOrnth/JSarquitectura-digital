@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="Imgs/LOGO/JS2.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/estilito.css">
+    <script src="https://kit.fontawesome.com/fe3f6d7c1b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <title>Contacto</title>
+</head>
+<header id="headermio"></header>
+<!-- Script para color de página seleccionada en el menú  -->
+<script type="text/javascript">
+  window.onload = function() {
+      document.getElementById("op5").style.background="#ed9623";
+      document.getElementById("op5").style.color="black";
+      document.getElementById("op5").style.fontWeight = "900";
+  }
+</script>
+<body id="bodycontacto">
+  <div class="content">
+    <h2 id="titulo-contacto">Formulario de <span>contacto</span></h2>
+    <div class="contenedor-general-contacto">
+      <div class="formulariocontacto">
+        <h3 class="subtitulocontacto">Contanos sobre tu proyecto:</h3>
+        <form action="" name="miformulario" method="get">
+          <p>
+            <label>Nombre completo</label>
+            <input type="text" name="nombrecompleto" id="nombrecompleto" maxlength="25">
+          </p>
+          <p>
+            <label>e-Mail</label>
+            <input type="email" name="email" id="eMaill" required="" class="form-control" oninvalid="if (this.value == ''){this.setCustomValidity('Este campo no puede estar vacío!')} if (this.value != ''){this.setCustomValidity('Por favor ingresa una dirección de correo válida')}" oninput="setCustomValidity('')">
+          </p>
+          <p>
+            <label>Teléfono</label>
+            <input type="number" name="telefono">
+          </p>
+          <p>
+            <label>Ciudad</label>
+            <input type="text" name="ciudad">
+          </p>
+          <div class="opciones-radio">
+            <div class="form-group">
+              <span class="opcion-radio">
+                <input id="radio" type="radio" name="obra" id="nueva" value="1">
+                <label for="obra">Nueva</label>
+              </span>
+              <span class="opcion-radio">
+                <input id="radio" type="radio" name="obra" id="reforma" value="2">
+                <label for="obra">Reforma</label>
+              </span>
+            </div>
+          </div>
+          <p class="bloque">
+            <label>Mensaje:</label>
+            <textarea name="mensaje" id="" cols="20" rows="10"></textarea>
+          </p>
+          <p class="bloque">
+            <button type="submit" id="boton" name="boton" value="Enviar" onClick="validarCorreo(document.getElementById('eMaill').value)"/>
+              Enviar
+            </button>
+          </p>
+        </form>
+      </div>
+      <div class="informacioncontacto">
+        <h4>Mas información:</h4>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i>221 641-1310</li>
+          <li><i class="fa-solid fa-envelope"></i><a href="mailto:safa.arq@gmail.com">safa.arq@gmail.com</a></li>
+        </ul>
+        <p>Contanos brevemente sobre tu proyecto y nos pondremos en contacto para coordinar una reunión en forma personal o virtual según la locación de la obra.</p>
+        <div>
+          <img src="Imgs/LOGO/JS.png">
+        </div>
+        <p id="marca">Arquitectura Digital</p>
+        <p id="redes">Encontranos en redes sociales</p>
+        <div class="socialmedias">
+          <a class="fa-brands fa-facebook" href="index.html"></a>
+          <a class="fa-brands fa-instagram" href="#"></a>
+          <a class="fa-brands fa-linkedin" href="#"></a>
+      </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function(){
+        //Variables
+        var formulario = document.getElementsByName('miformulario')[0],
+
+            boton = document.getElementById('boton');
+
+        var validarNombre = function(e){
+            if (miformulario.nombrecompleto.value == 0){
+                alert("Por favor completa el campo 'nombre'");
+                e.preventDefault();
+            }
+        };
+
+        var validarObra = function(e){
+            if (miformulario.obra[0].checked == true || 
+                miformulario.obra[1].checked == true){
+            } else{
+                alert("Por favor completa el campo 'tipo de obra'");
+                e.preventDefault();
+            }
+        };
+        
+        var validarMensaje = function(e){
+            if (miformulario.mensaje.value.length < 15 == true) {
+              alert("Tu mensaje es demasiado corto.");
+              e.preventDefault();
+            }	 
+          };
+        
+        var validar = function(e){
+            validarNombre(e);
+            validarObra(e);
+            validarMensaje(e);
+        };
+           
+        miformulario.addEventListener("submit", validar);
+    }())
+  </script>
+    <footer id="footermio" ></footer>
+          <script src="JavaScript/script.js"></script>
+  <script>
+      function validarCorreo(correo){
+        var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+        var esValido= expReg.test(correo);
+        if(esValido==false){
+          alert("Por favor ingresá una dirección de correo válida"); 
+        }
+      } 
+  </script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <link rel="shortcut icon" href="Imgs/LOGO/JS2.png" type="image/x-icon">
+        <link rel="stylesheet" href="CSS/estilito.css">
+        <script src="https://kit.fontawesome.com/fe3f6d7c1b.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <title>JS Arquitectura</title>
+    </head>
+    <body>
+        <header id="headermio"></header>
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById("op4").style.background="#ed9623";
+                document.getElementById("op4").style.color="black";
+                document.getElementById("op4").style.fontWeight = "900";
+            }
+        </script>
+        <section class="animada">
+            <div class="titulosanimados" id="fotomontajes">
+                <div class="texto-arriba">
+                <div>
+                    <span class="titulosbanner">Fotomontajes</span>
+                </div>
+                </div>
+                <div class="texto-abajo">
+                    <div id="parrafobanner">Con esta herramienta podemos insertar tu proyecto, inmueble, renovación o diseño en el entorno en el que existirá cuando sea realizado.</div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="bannergaleria3" id="noanimado">
+            <p class="bannergaleriatitulo">Fotomontajes</p>
+            <p class="bannergaleriatexto">Con esta herramienta podemos insertar tu proyecto, inmueble, renovación o diseño en el entorno en el que existirá cuando sea realizado.</p>
+        </section> -->
+        <div class="contenedor-galeria" id="contenedor-galeriafotomontajes">
+            <div class="galeria-hijo">
+                <a href="#montaje1">
+                    <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE 1.jpg" alt="">
+                </a>
+            </div>
+            <div class="galeria-hijo">
+                <a href="#montaje2">
+                    <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE 2.jpg" alt="">
+                </a>
+            </div>
+            <div class="galeria-hijo">
+                <a href="#montaje3">
+                    <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE 3.jpg" alt="">
+                </a>
+            </div>
+            <div class="galeria-hijo">
+                <a href="#montaje4">
+                <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE 4.jpg" alt="">
+                </a>
+            </div>
+            <div class="galeria-hijo">
+                <a href="#montaje5">
+                <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE 5.jpg" alt="">
+                </a>
+            </div>
+            <div class="galeria-hijo">
+                <a href="#montaje6">
+                <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE.jpg" alt="">
+                </a>
+            </div>
+            <div class="galeria-hijo">
+                <a href="#montaje7">
+                <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE 6.jpg" alt="">
+                </a>
+            </div>
+            <div class="galeria-hijo">
+                <a href="#montaje8">
+                <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE 7.jpg" alt="">
+                </a>
+            </div>
+        </div>    
+        <article class="lightbox" id="montaje1">
+        <a href="#montaje8" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE 1.jpg" alt="">
+        <a href="#montaje2" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="montaje2">
+        <a href="#montaje1" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE 2.jpg" alt="">
+        <a href="#montaje3" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="montaje3">
+        <a href="#montaje2" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE 3.jpg" alt="">
+        <a href="#montaje4" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="montaje4">
+        <a href="#montaje3" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE 4.jpg" alt="">
+        <a href="#montaje5" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="montaje5">
+        <a href="#montaje4" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE 5.jpg" alt="">
+        <a href="#montaje6" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="montaje6">
+        <a href="#montaje5" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE.jpg" alt="">
+        <a href="#montaje7" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="montaje7">
+        <a href="#montaje6" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE 6.jpg" alt="">
+        <a href="#montaje8" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+        </article>
+        <article class="lightbox" id="montaje8">
+        <a href="#montaje7" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="Imgs/FOTOMONTAJE/FOTOMONTAJE 7.jpg" alt="">
+        <a href="#montaje1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#" class="close">X</a>
+        </article>
+        <section>
+            <p class="titulolinks">Visitá también nuestras otras secciones:</p>
+            <div class="separador"></div>
+            <div class="linksgalerias">
+                <div class="links">
+                    <a href="3d.html" src="foto">
+                        <img src="Imgs/3d.png" alt=""></a>
+                    <tag>Imágenes 3D</tag>
+                </div>
+                <div class="links">
+                    <a href="antes y despues.html" src="foto">
+                        <img src="Imgs/AyD.JPG" alt=""></a>
+                    <tag>Antes y después</tag>
+                </div>
+                <div class="links">
+                    <a href="comparativa.html" src="foto">
+                        <img src="Imgs/Comparativas.jpg" alt=""></a>
+                    <tag>Comparativas</tag>
+                </div>
+            </div>
+        </section>
+        <footer id="footermio"></footer>
+        <script src="JavaScript/script.js"></script>
+    </body>
+</html>
